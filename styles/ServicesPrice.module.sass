@@ -1,0 +1,71 @@
+.section_services__prices
+    display: flex
+    justify-content: space-between
+    flex: 1 1
+    
+.section_services__inner
+    padding-right: 50px
+    border-left: 1px solid #fff
+    padding-left: 30px
+    width: 70%
+
+.section_services__all
+    display: none
+    &.active
+        display: flex
+
+.section_services__prices_text
+    font-family: 'Circe', sans-serif
+    text-transform: none
+    opacity: .6
+
+
+.section_services__price
+    display: flex
+    font-family: 'Circe', sans-serif
+    margin-top: 26px
+    justify-content: space-between
+    text-transform: none
+    border-bottom: 1px solid #fff
+    padding-bottom: 10px
+
+.services_prices_btns
+    margin-top: 50px
+
+.services_prices_btn
+    padding: 15px 57px
+    border: none
+    text-transform: uppercase
+    font-family: 'Circe', sans-serif
+    cursor: pointer
+    transition: .3s
+    width: 220px
+    &:hover
+        background: #540842
+        box-shadow: 0px 22px 44px rgba(113, 22, 92, 0.3)
+        border: 1px solid #71165B
+
+.services_prices_btn_first
+    background: #71165B
+    border: 1px solid #71165B
+    box-shadow: 0px 22px 44px rgba(113, 22, 92, 0.3)
+    margin-right: 20px
+
+.services_prices_btn_second
+    border: 1px solid #FFFFFF
+    background: none
+    margin-top: 15px
+
+
+@media screen and ( max-width: 1024px)
+    .section_services__inner
+        width: 100%
+        padding-right: 0
+
+    .section_services__all
+        flex-wrap: wrap
+
+@media screen and ( max-width: 425px)
+    .services_prices_btn
+        width: 100%
+    

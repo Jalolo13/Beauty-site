@@ -1,0 +1,47 @@
+.services_list
+    margin-right: 55px
+    div
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    
+.services_list_item
+    font-size: 18px
+    margin-top: 50px
+    cursor: pointer
+    opacity: .5
+    transition: .3s
+    width: max-content
+    &.active
+        opacity: 1
+    &:first-child
+        margin-top: 0
+    
+.services_btn_plus
+    font-size: 40px
+    font-weight: 300
+    border: none
+    background: none
+    cursor: pointer
+    transition: .3s
+    opacity: .5
+    &.active
+        opacity: 1
+        transform: rotate(45deg)
+
+.services_list_item_adaptive
+    display: none
+    
+
+@media screen and ( max-width: 768px )
+    .services_list
+        margin-right: 25px
+    
+@media screen and ( max-width: 425px)
+    .services_list
+        display: none
+
+    .services_list_item_adaptive
+        &.active
+            display: inline-block

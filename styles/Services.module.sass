@@ -1,0 +1,35 @@
+.section_services
+    padding: 0 100px
+    margin-top: 150px
+    
+    font-family: 'Vera Humana 95', cursive
+    text-transform: uppercase
+    font-weight: 400
+
+.section_services__prices_title
+    font-size: 18px
+    margin-top: 0
+    opacity: .6
+
+.section_services__title
+    font-size: 52px
+
+.section_services__img
+    text-align: center
+    display: none
+    margin-top: 45px
+    &.active
+        display: block
+
+.section_services__listprice
+    display: flex
+    flex-wrap: wrap
+
+@media screen and ( max-width:1024px )
+    .section_services
+        padding: 0 15px
+    
+    .section_services__img
+        width: 100%
+        span, img
+            width: 100%
