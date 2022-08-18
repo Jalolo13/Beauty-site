@@ -1,0 +1,31 @@
+.our_works
+    margin: 120px 0
+    padding: 0 100px
+
+.our_works__subtitle
+    margin: 20px 0 50px
+    font-size: 18px
+    a
+        color: #930270
+        text-transform: uppercase
+        font-weight: 600
+
+.our_works__inner
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-template-rows: repeat(2, 1fr)
+    grid-gap: 40px
+
+@media screen and ( max-width: 1024px)
+    .our_works
+        padding: 0 15px
+    
+    .our_works__inner
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+
+@media screen and ( max-width: 425px)
+    .our_works__inner
+        grid-template-columns: repeat(1, 1fr)
+        grid-template-rows: repeat(6, 1fr)
+        grid-gap: 20px

@@ -4,6 +4,8 @@ import Services from "./Services";
 import ServicesProps from "./ServicesProps";
 import "swiper/css/bundle";
 import { useEffect, useState } from "react";
+import OurWorks from "./OurWorks";
+import Products from "./Products";
 
 const Layout = () => {
     const [active, setActive] = useState(false);
@@ -43,6 +45,8 @@ const Layout = () => {
                 reviews={false}
                 master={true}
             />
+            <OurWorks />
+            <Products />
         </>
     );
 };

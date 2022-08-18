@@ -25,7 +25,7 @@ const MainSection = () => {
                             Салон красоты премиум класса
                         </p>
                     </div>
-                    <h2 className={styles.main_section_title}>Annetka.Hair</h2>
+                    <h1 className={styles.main_section_title}>Annetka.Hair</h1>
                     <p className={styles.main_section_subtitle}>
                         Annetka Hair - эксклюзивный салон красоты премиум
                         <br />
@@ -66,7 +66,10 @@ const MainSection = () => {
                     {" "}
                     +7 (995) 099-27-57
                 </a>
-                <a href="tel:+79950992757" className={styles.main_section_contacts_phone_img}>
+                <a
+                    href="tel:+79950992757"
+                    className={styles.main_section_contacts_phone_img}
+                >
                     <Image src={phone} alt="phone" layout="intrinsic" />
                 </a>
             </div>
