@@ -6,6 +6,8 @@ import "swiper/css/bundle";
 import { useEffect, useState } from "react";
 import OurWorks from "./OurWorks";
 import Products from "./Products";
+import Contacts from "./Contacts";
+import Footer from "./Footer";
 
 const Layout = () => {
     const [active, setActive] = useState(false);
@@ -27,27 +29,31 @@ const Layout = () => {
         }
     }, []);
     return (
-        <>
+        <div className="wrapper">
             <Header />
-            <MainSection />
-            <Services />
-            <ServicesProps
-                slide={slides}
-                adaptive={active}
-                serviceTitle={"Мастера"}
-                reviews={true}
-                master={false}
-            />
-            <ServicesProps
-                slide={slides}
-                adaptive={active}
-                serviceTitle={"Отзывы клиентов"}
-                reviews={false}
-                master={true}
-            />
-            <OurWorks />
-            <Products />
-        </>
+            <main>
+                <MainSection />
+                <Services />
+                <ServicesProps
+                    slide={slides}
+                    adaptive={active}
+                    serviceTitle={"Мастера"}
+                    reviews={true}
+                    master={false}
+                />
+                <ServicesProps
+                    slide={slides}
+                    adaptive={active}
+                    serviceTitle={"Отзывы клиентов"}
+                    reviews={false}
+                    master={true}
+                />
+                <OurWorks />
+                <Products />
+                <Contacts />
+            </main>
+            <Footer />
+        </div>
     );
 };
 

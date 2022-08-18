@@ -49,18 +49,19 @@ const Services = () => {
             priceSenior: 3499,
         },
     ];
+    
     const [active, setActive] = useState(0);
-    const [className, setClassName] = useState(true);
+
     return (
         <section className={styles.section_services}>
-            <h2 className={styles.section_services__title + " " + styles.title}>Услуги и цены</h2>
+            <h2 className={styles.section_services__title + " " + styles.title}>
+                Услуги и цены
+            </h2>
             <div className={styles.section_services__listprice}>
                 <ServicesList
                     arrServices={arrServices}
                     active={active}
                     setActive={setActive}
-                    className={className}
-                    setClassName={setClassName}
                 />
                 <ServicesPrice arrServices={arrServices} active={active} />
                 {arrServices.map(({ img, id }, i) => (

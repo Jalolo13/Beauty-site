@@ -1,0 +1,50 @@
+.footer
+    padding: 0 100px
+    background: #010101
+    min-height: 100%
+    p
+        text-align: center
+        opacity: .6
+        font-family: 'Circe', sans-serif
+        margin-top: 30px
+
+.footer__inner
+    border-top: 1px solid rgba(255,255,255,.2)
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    align-items: center
+    div
+        p
+            text-align: right
+            font-size: 12px
+            margin-top: 0
+
+@media screen and ( max-width: 1024px)
+    .footer
+        padding: 45px 15px
+
+    .footer__inner
+        div
+            p
+                text-align: center
+        ul
+            display: flex
+
+@media screen and ( max-width: 550px)
+    .footer__inner
+        flex-direction: column
+        align-items: flex-start
+        div
+            p
+                text-align: left
+                font-weight: 300
+                opacity: .9
+        ul
+            margin-top: 0
+            flex-direction: column
+            align-items: flex-start
+            li
+                margin-top: 12px
+                &:first-child
+                    margin-top: 0

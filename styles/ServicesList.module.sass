@@ -29,19 +29,46 @@
     &.active
         opacity: 1
         transform: rotate(45deg)
+        
+.services__popup
+    display: none
+    &.active
+        display: block
 
 .services_list_item_adaptive
+    color: #fff
+
+.services__list_popup
     display: none
-    
+    font-family: 'Vera Humana 95', cursive
+    font-size: 18px
+    border: 1px solid rgba(255,255,255,.6)
+    padding: 20px 0
+    margin-bottom: 30px
+    span
+        margin-left: 15px
+        font-family: 'Vera Humana 95', cursive
+        font-weight: 700
+    &.active
+        display: inline
+
+.services__popup_span
+    display: flex
+    justify-content: space-between
+    align-items: center
 
 @media screen and ( max-width: 768px )
     .services_list
         margin-right: 25px
     
-@media screen and ( max-width: 425px)
+@media screen and ( max-width: 426px)
     .services_list
         display: none
 
     .services_list_item_adaptive
+        padding: 20px 15px
+        &:last-child
+            padding-bottom: 0
         &.active
-            display: inline-block
+            background: rgba(255,255,255,.1)
+            color: #71165B

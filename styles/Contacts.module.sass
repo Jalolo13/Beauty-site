@@ -1,0 +1,110 @@
+.contacts
+    background: #010101
+    padding: 100px
+    display: flex
+    height: 100%
+    flex-wrap: wrap
+    justify-content: space-between
+    
+.contacts__how
+    width: 380px
+    height: 100%
+    margin-left: 100px
+    div
+        height: 606px
+        width: 100%
+        background: #D9D9D9
+
+.contacts__inner
+    display: flex
+    flex-direction: column
+
+.contacts__subtitle
+    margin-bottom: 15px
+    font-size: 18px
+
+.contacts__text
+    opacity: .6
+
+.contacts__map
+    flex: 1 1 auto
+    margin-left: 15px
+
+.contacts__btn
+    background: #71165B
+    box-shadow: 0px 22px 44px rgba(113, 22, 92, 0.3)
+    cursor: pointer
+    border: none
+    width: 250px
+    padding: 19px 0
+    margin-top: 112px
+    transition: .3s
+    &:hover
+        background: #540842
+        box-shadow: 0px 22px 44px rgba(113, 22, 92, 0.3)
+
+.contacts__block
+    margin-top: 45px
+    &:first-child
+        margin-top: 0
+
+    ul
+        display: flex
+        flex-direction: row
+        li
+            margin: 0
+            margin-left: 15px
+            &:first-child
+                margin-left: 0
+
+.contacts__iframe_map
+    border: 1px
+    width: 100%
+    min-height: 606px
+
+@media screen and ( max-width: 1024px)
+    .contacts
+        padding: 100px 15px
+
+    .contacts__btn
+        margin-top: 73px
+
+    .contacts__how
+        margin-left: 0
+
+    .contacts__map
+        margin-top: 60px
+
+@media screen and ( max-width: 768px)
+    .contacts__how
+        margin-top: 60px
+        width: 100%
+        order: 1
+        div
+            height: 396px
+
+    .contacts__map
+        order: 0
+        margin-left: 0
+
+
+@media screen and ( max-width: 426px)
+    .contacts__inner
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-between
+
+    .contacts__iframe_map
+        min-height: 100%
+
+    .contacts__btn
+        width: 100%
+
+    .contacts__block
+        &:first-child
+            width: 50%
+        &:nth-child(2)
+            margin-top: 0
+        &:nth-child(4)
+            width: 40%
+            

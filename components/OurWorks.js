@@ -26,7 +26,7 @@ const OurWorks = () => {
             </p>
             <div className={styles.our_works__inner}>
                 {arrImage.map((image, i) => (
-                    <Image key={i} src={image} alt="img" />
+                    <Image key={i} src={image} alt="img" layout="responsive" />
                 ))}
             </div>
         </section>

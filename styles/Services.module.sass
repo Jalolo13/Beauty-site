@@ -11,6 +11,9 @@
     margin-top: 0
     opacity: .6
 
+.section_services__title
+    margin-bottom: 20px
+
 .section_services__img
     text-align: center
     display: none
@@ -20,7 +23,10 @@
 
 .section_services__listprice
     display: flex
+
     flex-wrap: wrap
+
+
 
 @media screen and ( max-width:1024px )
     .section_services
@@ -30,3 +36,8 @@
         width: 100%
         span, img
             width: 100%
+
+@media screen and ( max-width: 426px)
+    .section_services__listprice
+        flex-direction: column
+    
