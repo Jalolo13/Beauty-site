@@ -53,7 +53,7 @@ const Services = () => {
     const [className, setClassName] = useState(true);
     return (
         <section className={styles.section_services}>
-            <h2 className={styles.section_services__title}>Услуги и цены</h2>
+            <h2 className={styles.section_services__title + " " + styles.title}>Услуги и цены</h2>
             <div className={styles.section_services__listprice}>
                 <ServicesList
                     arrServices={arrServices}

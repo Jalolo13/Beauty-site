@@ -25,6 +25,61 @@ a
   color: inherit
   text-decoration: none
 
+h2
+  font-size: 52px
+  font-weight: 400
+  text-transform: uppercase
+  font-family: 'Vera Humana 95', cursive
+
+.swiper 
+  width: 100%
+  height: 100%
+  position: static
+
+.swiper-slide
+  text-align: center
+  font-size: 18px
+  background: #000
+  display: -webkit-box
+  -webkit-box-pack: center
+  color: #000
+  -ms-flex-pack: center
+  -webkit-justify-content: center
+  justify-content: center
+  -webkit-box-align: center
+  -ms-flex-align: center
+  -webkit-align-items: center
+  align-items: center
+
+.swiper-button-prev, .swiper-button-next
+  width: 35px
+  height: 35px
+  position: absolute
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  &::after
+      display: none
+
+.swiper-button-prev
+  margin-top: 140px
+  left: 40px
+  background-image: url("../assets/images/arrow-left.svg")
+
+.swiper-button-next
+  margin-top: 140px
+  right: 40px
+  background-image: url("../assets/images/arrow-right.svg")
+
+.swiper-pagination-bullet
+  transition: .3s
+  opacity: 1
+  border: 1px solid #fff
+
+.swiper-pagination-bullet-active
+  background: #930270
+  border: 1px solid #930270
+
 @media (prefers-color-scheme: dark) 
   html 
     color-scheme: dark  
