@@ -33,12 +33,23 @@ a
   color: inherit
   text-decoration: none
   padding: 0
+  color: #fff
+
+h1, h2, h3, h4, h5, h6
+  color: #fff
 
 p, span, button
   margin: 0
   padding: 0
   font-family: 'Circe', sans-serif
   color: #fff
+
+h1
+  font-size: 110px
+  font-family: 'Vera Humana 95', cursive
+  text-transform: uppercase
+  font-weight: 400
+  margin: 45px 0 35px
 
 h2
   font-size: 52px
@@ -72,53 +83,52 @@ button
   text-transform: uppercase
 
 .swiper 
-  width: 100%
-  height: 100%
-  position: static
+    width: 100%
+    height: 100%
+    position: static
 
 .swiper-slide
-  text-align: center
-  font-size: 18px
-  background: #000
-  display: -webkit-box
-  -webkit-box-pack: center
-  color: #000
-  -ms-flex-pack: center
-  -webkit-justify-content: center
-  justify-content: center
-  -webkit-box-align: center
-  -ms-flex-align: center
-  -webkit-align-items: center
-  align-items: center
+    text-align: center
+    font-size: 18px
+    background: #000
+    display: -webkit-box
+    -webkit-box-pack: center
+    color: #000
+    -ms-flex-pack: center
+    -webkit-justify-content: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    -webkit-align-items: center
+    align-items: center
 
-.swiper-button-prev, .swiper-button-next
-  width: 35px
-  height: 35px
-  position: absolute
-  background-repeat: no-repeat
-  background-position: center
-  background-size: cover
-  &::after
-      display: none
+.swiper-button-prev, .swiper-button-next 
+    width: 35px 
+    height: 35px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    &::after
+        display: none
 
 .swiper-button-prev
-  margin-top: 140px
-  left: 40px
-  background-image: url("../assets/images/arrow-left.svg")
+    margin-top: 140px
+    left: 40px
+    background-image: url("../assets/images/arrow-left.svg")
 
 .swiper-button-next
-  margin-top: 140px
-  right: 40px
-  background-image: url("../assets/images/arrow-right.svg")
+    margin-top: 140px
+    right: 40px
+    background-image: url("../assets/images/arrow-right.svg")
 
 .swiper-pagination-bullet
-  transition: .3s
-  opacity: 1
-  border: 1px solid #fff
+    transition: .3s
+    opacity: 1
+    border: 1px solid #fff
 
 .swiper-pagination-bullet-active
-  background: #930270
-  border: 1px solid #930270
+    background: #930270
+    border: 1px solid #930270
 
 @media (prefers-color-scheme: dark) 
   html 
@@ -126,7 +136,15 @@ button
   body 
     color: white
 
+@media screen and ( max-width: 1024px)
+  h1
+    font-size: 91px
+  
+
 @media screen and ( max-width: 768px)
+  h1
+    font-size: 42px
+
   h2
     font-size: 48px
   

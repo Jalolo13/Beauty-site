@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper";
+import { Pagination } from "swiper";
 import ServicesMasterBlock from "./ServicesMasterBlock";
 import ServicesReviewsBlock from "./ServicesReviewsBlock";
 

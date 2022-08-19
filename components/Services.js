@@ -49,7 +49,7 @@ const Services = () => {
             priceSenior: 3499,
         },
     ];
-    
+
     const [active, setActive] = useState(0);
 
     return (

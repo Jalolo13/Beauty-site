@@ -1,8 +1,9 @@
-import styles from "../styles/ServicesProps.module.sass";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+
+import styles from "../styles/ServicesProps.module.sass";
+
 import SwiperSlider from "./SwiperSlider";
 import SwiperSliderAdaptive from "./SwiperSliderAdaptive";
 
@@ -18,7 +19,11 @@ const ServicesProps = ({ slide, adaptive, serviceTitle, reviews, master }) => {
                         styles.active
                     }
                 >
-                    <SwiperSliderAdaptive slide={slide} reviews={reviews} master={master} />
+                    <SwiperSliderAdaptive
+                        slide={slide}
+                        reviews={reviews}
+                        master={master}
+                    />
                 </div>
             ) : (
                 <div className={styles.services__props_swiper_block}>

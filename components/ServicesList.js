@@ -29,7 +29,7 @@ const ServicesList = ({ active, arrServices, setActive }) => {
             <ul className={styles.services_list}>
                 {arrServices.map(({ title, id }, i) => (
                     <>
-                        <div>
+                        <div key={id}>
                             <li
                                 key={id}
                                 onClick={() => setActive(i)}

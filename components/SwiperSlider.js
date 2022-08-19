@@ -2,8 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import ServicesMasterBlock from "./ServicesMasterBlock";
 import ServicesReviewsBlock from "./ServicesReviewsBlock";
+import MasksBlockSlide from "./MasksBlockSlide";
 
-const SwiperSlider = ({ reviews, master }) => {
+const SwiperSlider = ({ reviews, master, masks }) => {
     return (
         <Swiper
             slidesPerView={3}
@@ -73,6 +74,36 @@ const SwiperSlider = ({ reviews, master }) => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <ServicesReviewsBlock />
+                    </SwiperSlide>
+                </>
+            ) : masks ? (
+                <>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
                     </SwiperSlide>
                 </>
             ) : null}
