@@ -8,6 +8,7 @@
 .masks_block__btns
     display: flex
     width: 100%
+    
     justify-content: space-between
 
 .masks_block__btn
@@ -27,3 +28,15 @@
         margin-left: 0
     &:last-child
         background: #1B1BF8
+
+@media screen and ( max-width: 1024px)
+    .masks_block__slide
+        padding: 15px
+
+    .masks_block__btns
+        flex-wrap: wrap
+
+    .masks_block__btn
+        margin-left: 0
+        &:last-child
+            margin-top: 10px

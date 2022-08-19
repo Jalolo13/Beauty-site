@@ -1,0 +1,48 @@
+.info__delivery
+    background: url('../assets/images/info bg.png') center center no-repeat
+    background-size: cover
+    margin-top: 100px
+    min-height: 643px
+    padding: 100px
+    width: 100%
+
+.info__delivery__inner
+    min-height: max-content
+    width: 543px
+    padding: 50px 35px
+    box-sizing: border-box
+    background: #111111
+    div
+        margin-top: 30px
+        display: flex
+        flex-direction: column
+        gap: 20px
+    h2
+        margin-bottom: 25px
+
+.info__delivery_btn
+    background: #71165B
+    width: 100%
+    border: none
+    cursor: pointer
+    font-size: 18px
+    padding: 19px
+    margin-top: 25px
+    font-family: 'Circe', sans-serif
+    text-transform: uppercase
+    transition: .3s
+    &:hover
+        background: #3f1334
+
+@media screen and ( max-width: 768px)
+    .info__delivery__inner
+        width: 100%
+        padding: 50px 15px
+    
+    .info__delivery
+        padding: 50px 15px
+        box-sizing: border-box
+
+@media screen and ( max-width: 425px)
+    .info__delivery
+        padding: 40px 0

@@ -1,7 +1,3 @@
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 import styles from "../styles/ServicesProps.module.sass";
 
 import SwiperSlider from "./SwiperSlider";

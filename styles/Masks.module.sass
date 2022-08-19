@@ -1,4 +1,37 @@
 .info__masks
     margin-top: 91px
+    padding: 0 100px
+    position: relative
+    padding-bottom: 25px
     h2
-        margin-bottom: 50px
+        flex: 1 1 auto
+
+.info__title_change
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 50px
+
+.info__list_change
+    display: flex
+    align-items: center
+
+.info__list_item
+    font-family: 'Circe', sans-serif
+    cursor: pointer
+    margin-right: 45px
+    transition: .3s
+    &:last-child
+        margin-right: 0
+    &.active
+        color: #930270
+
+
+@media screen and ( max-width: 1024px)
+    .info__masks
+        padding: 0 15px
+        padding-bottom: 50px
+
+    .info__title_change
+        margin-bottom: 20px

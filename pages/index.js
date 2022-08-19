@@ -7,27 +7,14 @@ import Products from "../components/Products";
 import Contacts from "../components/Contacts";
 import Footer from "../components/Footer";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Adapt } from "../components/utils";
 
 const Home = () => {
     const [active, setActive] = useState(false);
     const [slides, setSlides] = useState(2);
-    useEffect(() => {
-        const width = document.documentElement.scrollWidth;
-        if (width <= 1024) {
-            setActive(true);
-        } else if (width >= 1024) {
-            setActive(false);
-        }
 
-        if (width <= 425) {
-            setSlides(1);
-            console.log(slides);
-        } else if (width >= 425) {
-            setSlides(2);
-            console.log(slides);
-        }
-    }, []);
+    Adapt(slides, setActive, setSlides);
     return (
         <>
             <Header />

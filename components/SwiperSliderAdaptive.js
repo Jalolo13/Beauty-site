@@ -2,8 +2,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import ServicesMasterBlock from "./ServicesMasterBlock";
 import ServicesReviewsBlock from "./ServicesReviewsBlock";
+import MasksBlockSlide from "./MasksBlockSlide";
 
-const SwiperSliderAdaptive = ({ slide, reviews, master }) => {
+const SwiperSliderAdaptive = ({ slide, reviews, master, masks }) => {
     return (
         <Swiper
             slidesPerView={slide}
@@ -75,6 +76,36 @@ const SwiperSliderAdaptive = ({ slide, reviews, master }) => {
                     </SwiperSlide>
                     <SwiperSlide>
                         <ServicesReviewsBlock />
+                    </SwiperSlide>
+                </>
+            ) : masks ? (
+                <>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
                     </SwiperSlide>
                 </>
             ) : null}
