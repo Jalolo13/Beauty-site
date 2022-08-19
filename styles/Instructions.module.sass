@@ -1,0 +1,83 @@
+.info__instructions
+    display: flex
+    padding: 100px
+    box-sizing: border-box
+    flex-wrap: wrap
+    gap: 20px
+
+.info__info__list
+    padding: 15px
+    font-family: 'Circe', sans-serif
+    font-weight: 300
+    opacity: .8
+
+.info__info__btn
+    padding: 13px 24px
+    background: #25D366
+    border: none
+    cursor: pointer
+    
+.info__subtitle
+    margin-bottom: 15px
+
+.info__instruction
+    width: 400px
+    height: 606px
+    div
+        max-width: 100%
+        background: #D9D9D9
+        min-height: 100%
+
+.info__info
+    width: 400px
+    height: 606px
+
+.info__info__inner
+    box-sizing: border-box
+    background: #010101
+    padding: 30px
+    min-height: 100%
+    max-width: 100%
+
+.info__social__inner
+    display: flex
+    flex-wrap: wrap
+    gap: 40px
+    width: 400px
+
+.info__social_link
+    width: max-content
+    background: #010101
+    padding: 20px
+
+@media screen and ( max-width: 1024px)
+    .info__instructions
+        padding: 100px 15px
+    
+    .info__info,.info__instruction
+        width: 48%
+        
+    .info__social
+        margin-top: 50px
+        
+    .info__social__inner
+        width: 100%
+        justify-content: center
+
+    .info__social_link
+        width: 40%
+        display: flex
+        justify-content: center
+        align-items: center
+
+@media screen and ( max-width: 650px)
+    .info__info,.info__instruction
+        width: 100%
+        margin-top: 50px
+
+    .info__social__inner
+        flex-wrap: nowrap
+        gap: 6px
+
+    .info__social_link
+        padding: 15px

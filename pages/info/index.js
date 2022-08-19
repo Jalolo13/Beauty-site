@@ -4,6 +4,9 @@ import Masks from "../../components/Masks";
 import { useState } from "react";
 import { Adapt } from "../../components/utils";
 import Delivery from "../../components/Delivery";
+import Shower from "../../components/Shower";
+import Accessories from "../../components/Accessories";
+import Instructions from "../../components/Instructions";
 
 const Info = () => {
     const [active, setActive] = useState(false);
@@ -21,6 +24,9 @@ const Info = () => {
                 <Masks adaptive={active} masks={true} slide={slides} />
             </div>
             <Delivery />
+            <Shower adaptive={active} shower={true} slide={slides} />
+            <Accessories adaptive={active} accessories={true} slide={slides} />
+            <Instructions />
         </main>
     );
 };

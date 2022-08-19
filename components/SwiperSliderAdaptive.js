@@ -4,7 +4,14 @@ import ServicesMasterBlock from "./ServicesMasterBlock";
 import ServicesReviewsBlock from "./ServicesReviewsBlock";
 import MasksBlockSlide from "./MasksBlockSlide";
 
-const SwiperSliderAdaptive = ({ slide, reviews, master, masks }) => {
+const SwiperSliderAdaptive = ({
+    slide,
+    reviews,
+    master,
+    masks,
+    shower,
+    accessories,
+}) => {
     return (
         <Swiper
             slidesPerView={slide}
@@ -79,6 +86,66 @@ const SwiperSliderAdaptive = ({ slide, reviews, master, masks }) => {
                     </SwiperSlide>
                 </>
             ) : masks ? (
+                <>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                </>
+            ) : shower ? (
+                <>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <MasksBlockSlide />
+                    </SwiperSlide>
+                </>
+            ) : accessories ? (
                 <>
                     <SwiperSlide>
                         <MasksBlockSlide />
