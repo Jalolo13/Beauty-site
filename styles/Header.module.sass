@@ -1,4 +1,4 @@
-.header
+.header, .header_scroll
     display: flex
     padding: 0 100px
     position: absolute
@@ -6,7 +6,12 @@
     width: 100%
     box-sizing: border-box
     z-index: 10
+    transition: .4s
     
+.header_scroll
+    position: fixed
+    background: rgba(0,0,0,.8)
+
 .burger_menu
     display: none
     position: absolute
