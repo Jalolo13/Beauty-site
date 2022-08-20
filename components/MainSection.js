@@ -3,10 +3,8 @@ import phone from "../assets/images/phone.png";
 import bgAdaptive from "../assets/images/bg adaptive.png";
 import Image from "next/image";
 import MainSocial from "./MainSocial";
-import { useEffect } from "react";
 
 const MainSection = () => {
-    
     return (
         <section className={styles.main_section}>
             <div className={styles.main_section__inner}>
