@@ -55,9 +55,12 @@
         display: inline
 
 .services__popup_span
+    
     display: flex
     justify-content: space-between
     align-items: center
+    span
+        font-weight: 400
 
 @media screen and ( max-width: 768px )
     .services_list
@@ -67,10 +70,12 @@
     .services_list
         display: none
 
+    .services__popup
+        ul
+            margin-bottom: 0
+
     .services_list_item_adaptive
         padding: 20px 15px
-        &:last-child
-            padding-bottom: 0
         &.active
             background: rgba(255,255,255,.1)
             color: #71165B
