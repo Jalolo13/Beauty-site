@@ -38,15 +38,15 @@ const ServicesPrice = ({ arrServices, active }) => {
                             </p>
                             <div className={styles.section_services__price}>
                                 <span>{title} у стажёра</span>
-                                <span>{priceJun} руб.</span>
+                                <span>{priceJun} &#8381;</span>
                             </div>
                             <div className={styles.section_services__price}>
                                 <span>{title} у мастера</span>
-                                <span>{priceMiddle} руб.</span>
+                                <span>{priceMiddle} &#8381;</span>
                             </div>
                             <div className={styles.section_services__price}>
                                 <span>{title} у профи</span>
-                                <span>{priceSenior} руб.</span>
+                                <span>{priceSenior} &#8381;</span>
                             </div>
                             <div className={styles.services_prices_btns}>
                                 <button

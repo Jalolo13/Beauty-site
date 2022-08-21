@@ -2,11 +2,7 @@
     padding: 0 100px
     background: #010101
     min-height: 100%
-    p
-        text-align: center
-        opacity: .6
-        font-family: 'Circe', sans-serif
-        margin-top: 30px
+    font-family: 'Circe', sans-serif
 
 .footer__inner
     border-top: 1px solid rgba(255,255,255,.2)
@@ -15,16 +11,27 @@
     flex-wrap: wrap
     align-items: center
     div
-        p
+        p, a
+            opacity: .6
             text-align: right
             font-size: 12px
             margin-top: 0
+        a
+            &:hover
+                text-decoration: underline
 
 @media screen and ( max-width: 1024px)
     .footer
         padding: 45px 15px
 
     .footer__inner
+        ul
+            width: 70%
+            justify-content: flex-end
+            li
+                margin-right: 25px
+                a
+                    font-size: 16px
         div
             p
                 text-align: center
@@ -39,7 +46,6 @@
             p
                 text-align: left
                 font-weight: 300
-                opacity: .9
         ul
             margin-top: 0
             flex-direction: column

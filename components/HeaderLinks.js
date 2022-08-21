@@ -7,7 +7,7 @@ const HeaderLinks = ({ active }) => {
                 active ? styles.header_links_adaptive : styles.header_links
             }
         >
-            <li
+            <li onClick={() => handleScroll()}
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }
@@ -16,7 +16,7 @@ const HeaderLinks = ({ active }) => {
                     Услуги
                 </a>
             </li>
-            <li
+            <li onClick={() => handleScroll()}
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }
@@ -25,7 +25,7 @@ const HeaderLinks = ({ active }) => {
                     Мастера
                 </a>
             </li>
-            <li
+            <li onClick={() => handleScroll()}
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }
@@ -34,7 +34,7 @@ const HeaderLinks = ({ active }) => {
                     Отзывы
                 </a>
             </li>
-            <li
+            <li onClick={() => handleScroll()}
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }
@@ -43,7 +43,7 @@ const HeaderLinks = ({ active }) => {
                     Работы
                 </a>
             </li>
-            <li
+            <li onClick={() => handleScroll()}
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }

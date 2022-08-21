@@ -57,7 +57,7 @@ const MainSection = () => {
             </div>
             <div className={styles.main_section_contacts}>
                 <span style={{ float: "left", opacity: ".6" }}>
-                    Москва, м. Парк Победы, Улица 1812 года, дом 1
+                    м. Тульская, Самаринская ул. 1
                 </span>
                 <a
                     href="tel:+79950992757"

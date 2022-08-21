@@ -1,4 +1,4 @@
-.header, .header_scroll
+.header, .header_scroll, .header_scroll_adaptive
     display: flex
     padding: 0 100px
     position: absolute
@@ -8,9 +8,12 @@
     z-index: 10
     transition: .4s
     
-.header_scroll
+.header_scroll, .header_scroll_adaptive
     position: fixed
     background: rgba(0,0,0,.8)
+
+.header_scroll_adaptive
+    padding: 0 15px
 
 .burger_menu
     display: none
@@ -78,6 +81,7 @@
     transition: .3s ease all
     &.active
         width: 100vw
+        left: 0
         height: 100vh
         background: rgba(0,0,0, .8)
         position: fixed
@@ -104,6 +108,7 @@
 
 .header_link_item
     transition: .3s
+    font-size: 18px
     font-family: 'Circe', sans-serif
     &:hover
         color: #71165B

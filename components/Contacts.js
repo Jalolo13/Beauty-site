@@ -8,7 +8,7 @@ const Contacts = () => {
                 <div className={styles.contacts__block}>
                     <h4 className={styles.contacts__subtitle}>Адрес</h4>
                     <p className={styles.contacts__text}>
-                        Москва, м. Парк Победы, Улица 1812 года, дом 1
+                        м. Тульская, Самаринская ул. 1
                     </p>
                 </div>
                 <div className={styles.contacts__block}>
@@ -18,9 +18,9 @@ const Contacts = () => {
 
                 <div className={styles.contacts__block}>
                     <h4 className={styles.contacts__subtitle}>Время работы</h4>
-                    <p className={styles.contacts__text}>пн-пт 7:00 - 23:00</p>
                     <p className={styles.contacts__text}>
-                        сб-вс: 11:00 - 22:00
+                        по предварительной <br />
+                        записи
                     </p>
                 </div>
                 <div className={styles.contacts__block}>

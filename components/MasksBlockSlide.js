@@ -9,7 +9,7 @@ const MasksBlockSlide = () => {
             <Image src={imgMask} alt="maskImg" />
             <div className={styles.masks_block__slide}>
                 <h4>Маска розовая</h4>
-                <p>2500 руб.</p>
+                <p>2500 &#8381;</p>
                 <div className={styles.masks_block__btns}>
                     <a href="#" className={styles.masks_block__btn}>
                         Купить на WB

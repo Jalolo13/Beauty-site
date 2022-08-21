@@ -8,7 +8,7 @@ const ServicesList = ({ active, arrServices, setActive }) => {
     const [sortItem, setSortItem] = useState("Стрижка");
 
     useEffect(() => {
-        if (document.documentElement.scrollWidth <= 425) {
+        if (document.documentElement.scrollWidth <= 426) {
             setAdaptive(true);
         } else {
             setAdaptive(false);

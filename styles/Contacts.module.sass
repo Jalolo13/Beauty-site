@@ -9,9 +9,11 @@
 .contacts__how
     width: 380px
     height: 100%
-    margin-left: 100px
+    order: 1
+    margin-top: 15px
+    
     div
-        height: 606px
+        height: 400px
         width: 100%
         background: #D9D9D9
 
@@ -27,9 +29,10 @@
     opacity: .6
 
 .contacts__map
-    flex: 1 1 auto
-    margin-left: 15px
+    order: 0
+    margin: 15px 15px 0 100px
 
+    flex: 1 1 auto
 .contacts__btn
     background: #71165B
     box-shadow: 0px 22px 44px rgba(113, 22, 92, 0.3)
@@ -37,7 +40,7 @@
     border: none
     width: 250px
     padding: 19px 0
-    margin-top: 112px
+    margin-top: 50px
     transition: .3s
     &:hover
         background: #540842
@@ -60,33 +63,35 @@
 .contacts__iframe_map
     border: 1px
     width: 100%
-    min-height: 606px
+    min-height: 400px
+
+@media screen and ( max-width: 1245px)
+    .contacts__how
+        order: 0
+        margin-left: 100px
+    .contacts__map
+        order: 1
+        margin: 15px 0 0 15px
 
 @media screen and ( max-width: 1024px)
     .contacts
         padding: 100px 15px
 
-    .contacts__btn
-        margin-top: 73px
-
-    .contacts__how
-        margin-left: 0
-
     .contacts__map
         margin-top: 60px
 
-@media screen and ( max-width: 768px)
+@media screen and ( max-width: 790px)
     .contacts__how
-        margin-top: 60px
+        margin: 0
+        margin-top: 15px
         width: 100%
-        order: 1
         div
             height: 396px
 
     .contacts__map
         order: 0
         margin-left: 0
-
+        height: 100%
 
 @media screen and ( max-width: 426px)
     .contacts__inner
@@ -94,7 +99,11 @@
         flex-wrap: wrap
         justify-content: space-between
 
+    .contacts__how
+        order: 1
+
     .contacts__iframe_map
+        order: 0
         min-height: 100%
 
     .contacts__btn
@@ -102,9 +111,10 @@
 
     .contacts__block
         &:first-child
-            width: 50%
+            width: 40%
         &:nth-child(2)
             margin-top: 0
+            width: 40%
         &:nth-child(4)
             width: 40%
             
