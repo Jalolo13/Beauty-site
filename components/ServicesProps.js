@@ -3,9 +3,16 @@ import styles from "../styles/ServicesProps.module.sass";
 import SwiperSlider from "./SwiperSlider";
 import SwiperSliderAdaptive from "./SwiperSliderAdaptive";
 
-const ServicesProps = ({ slide, adaptive, serviceTitle, reviews, master }) => {
+const ServicesProps = ({
+    slide,
+    adaptive,
+    serviceTitle,
+    reviews,
+    master,
+    className,
+}) => {
     return (
-        <section className={styles.services__props}>
+        <section className={className}>
             <h2 className={styles.title}>{serviceTitle}</h2>
             {adaptive ? (
                 <div

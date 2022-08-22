@@ -6,6 +6,7 @@ import OurWorks from "../components/OurWorks";
 import Products from "../components/Products";
 import Contacts from "../components/Contacts";
 import Footer from "../components/Footer";
+import styles from "../styles/ServicesProps.module.sass";
 
 import { useState } from "react";
 import { Adapt } from "../components/utils";
@@ -22,6 +23,7 @@ const Home = () => {
                 <MainSection />
                 <Services />
                 <ServicesProps
+                    className={styles.services_props_masters}
                     slide={slides}
                     adaptive={active}
                     serviceTitle={"Мастера"}
@@ -29,6 +31,7 @@ const Home = () => {
                     master={false}
                 />
                 <ServicesProps
+                    className={styles.services_props_comments}
                     slide={slides}
                     adaptive={active}
                     serviceTitle={"Отзывы клиентов"}

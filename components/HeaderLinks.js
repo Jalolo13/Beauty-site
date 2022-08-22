@@ -1,13 +1,21 @@
 import styles from "../styles/Header.module.sass";
 
 const HeaderLinks = ({ active }) => {
+    const handleScroll = (e, service) => {
+        e.preventDefault();
+        const services = document.querySelector(`${service}`);
+        services.scrollIntoView({ block: "start", behavior: "smooth" });
+    };
     return (
         <ul
             className={
                 active ? styles.header_links_adaptive : styles.header_links
             }
         >
-            <li onClick={() => handleScroll()}
+            <li
+                onClick={(e) =>
+                    handleScroll(e, ".Services_section_services__EBTFn")
+                }
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }
@@ -16,7 +24,13 @@ const HeaderLinks = ({ active }) => {
                     Услуги
                 </a>
             </li>
-            <li onClick={() => handleScroll()}
+            <li
+                onClick={(e) =>
+                    handleScroll(
+                        e,
+                        ".ServicesProps_services_props_masters__TcfVC"
+                    )
+                }
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }
@@ -25,7 +39,13 @@ const HeaderLinks = ({ active }) => {
                     Мастера
                 </a>
             </li>
-            <li onClick={() => handleScroll()}
+            <li
+                onClick={(e) =>
+                    handleScroll(
+                        e,
+                        ".ServicesProps_services_props_comments__ccCbn"
+                    )
+                }
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }
@@ -34,7 +54,8 @@ const HeaderLinks = ({ active }) => {
                     Отзывы
                 </a>
             </li>
-            <li onClick={() => handleScroll()}
+            <li
+                onClick={(e) => handleScroll(e, ".OurWorks_our_works__vf9oL")}
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }
@@ -43,7 +64,8 @@ const HeaderLinks = ({ active }) => {
                     Работы
                 </a>
             </li>
-            <li onClick={() => handleScroll()}
+            <li
+                onClick={(e) => handleScroll(e, ".Contacts_contacts__bHTp7")}
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }
