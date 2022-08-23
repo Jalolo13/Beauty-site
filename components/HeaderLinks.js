@@ -1,11 +1,15 @@
 import styles from "../styles/Header.module.sass";
 
-const HeaderLinks = ({ active }) => {
+const HeaderLinks = ({ active, setBurger }) => {
     const handleScroll = (e, service) => {
         e.preventDefault();
         const services = document.querySelector(`${service}`);
         services.scrollIntoView({ block: "start", behavior: "smooth" });
+        setTimeout(() => {
+            setBurger(false);
+        }, 0);
     };
+
     return (
         <ul
             className={
@@ -13,9 +17,9 @@ const HeaderLinks = ({ active }) => {
             }
         >
             <li
-                onClick={(e) =>
-                    handleScroll(e, ".Services_section_services__EBTFn")
-                }
+                onClick={(e) => {
+                    handleScroll(e, ".Services_section_services__EBTFn");
+                }}
                 className={
                     active ? styles.header_link_adaptive : styles.header_link
                 }

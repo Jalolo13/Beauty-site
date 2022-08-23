@@ -1,18 +1,13 @@
-import { useState } from "react";
 import styles from "../styles/Header.module.sass";
 import HeaderLinks from "./HeaderLinks";
 import MainSocial from "./MainSocial";
 
-const BurgerMenu = () => {
-    const [active, setActive] = useState(false);
-
+const BurgerMenu = ({ burger, setBurger }) => {
     const handleClick = () => {
-        if (active) {
-            setActive(false);
-            document.body.style.overflow = "auto";
+        if (burger) {
+            setBurger(false);
         } else {
-            setActive(true);
-            document.body.style.overflow = "hidden";
+            setBurger(true);
         }
     };
 
@@ -20,23 +15,23 @@ const BurgerMenu = () => {
         <>
             <div
                 className={
-                    active
+                    burger
                         ? styles.burger_overlay + " " + styles.active
                         : styles.burger_overlay
                 }
             ></div>
             <div className={styles.burger_menu} onClick={handleClick}>
                 <div className={styles.burger}>
-                    <span className={active ? styles.active : null}></span>
+                    <span className={burger ? styles.active : null}></span>
                 </div>
             </div>
             <div
                 className={
-                    active ? styles.menu + " " + styles.active : styles.menu
+                    burger ? styles.menu + " " + styles.active : styles.menu
                 }
             >
-                <HeaderLinks active={active} />
-                <MainSocial active={active} />
+                <HeaderLinks active={burger} setBurger={setBurger}/>
+                <MainSocial active={burger} />
             </div>
         </>
     );

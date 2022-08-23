@@ -7,6 +7,8 @@ import Link from "next/link";
 const Header = () => {
     const [active, setActive] = useState(false);
     const [adaptive, setAdaptive] = useState(false);
+    const [burger, setBurger] = useState(false);
+
     useEffect(() => {
         document.addEventListener("scroll", () => {
             if (window.pageYOffset > 0) {
@@ -32,7 +34,7 @@ const Header = () => {
             <Link href="/">
                 <h5 className="logo">annetka.hair</h5>
             </Link>
-            <BurgerMenu />
+            <BurgerMenu burger={burger} setBurger={setBurger} />
             <HeaderLinks active={false} />
         </header>
     );

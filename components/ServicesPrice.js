@@ -65,7 +65,7 @@ const ServicesPrice = ({ arrServices, active }) => {
                                         styles.services_prices_btn
                                     }
                                 >
-                                    Наши услуги
+                                    Наши мастера
                                 </button>
                             </div>
                         </div>

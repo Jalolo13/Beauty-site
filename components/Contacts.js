@@ -7,11 +7,11 @@ const Contacts = () => {
             <div className={styles.contacts__inner}>
                 <div className={styles.contacts__block}>
                     <h4 className={styles.contacts__subtitle}>Адрес</h4>
-                    <p className={styles.contacts__text}>
+                    <a
+                        href="https://yandex.ru/maps/-/CCURnPVy0B"
+                        className={styles.contacts__text}
+                    >
                         м. Тульская, Самаринская ул. 1
-                    </p>
-                    <a href="https://yandex.ru/maps/-/CCURnPVy0B">
-                        Проложить маршрут
                     </a>
                 </div>
                 <div className={styles.contacts__block}>

@@ -84,63 +84,66 @@ button
   text-transform: uppercase
 
 .swiper 
-    width: 100%
-    height: 100%
-    position: static
+  width: 100%
+  height: 100%
+  position: static
 
 .swiper-slide
-    text-align: center
-    font-size: 18px
-    background: #000
-    display: -webkit-box
-    -webkit-box-pack: center
-    color: #000
-    -ms-flex-pack: center
-    -webkit-justify-content: center
-    justify-content: center
-    -webkit-box-align: center
-    -ms-flex-align: center
-    -webkit-align-items: center
-    align-items: center
+  text-align: center
+  font-size: 18px
+  background: #000
+  display: -webkit-box
+  -webkit-box-pack: center
+  color: #000
+  -ms-flex-pack: center
+  -webkit-justify-content: center
+  justify-content: center
+  -webkit-box-align: center
+  -ms-flex-align: center
+  -webkit-align-items: center
+  align-items: center
 
 .swiper-button-prev, .swiper-button-next 
-    width: 35px 
-    height: 35px
-    background-repeat: no-repeat
-    background-position: center
-    background-size: cover
-    &::after
-        display: none
+  width: 35px 
+  height: 35px
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  &::after
+    display: none
 
 .swiper-button-prev
-    margin-top: 50px
-    left: 40px
-    background-image: url("../assets/images/arrow-left.svg")
+  margin-top: 50px
+  left: 40px
+  background-image: url("../assets/images/arrow-left.svg")
 
 .swiper-button-next
-    margin-top: 50px
-    right: 40px
-    background-image: url("../assets/images/arrow-right.svg")
+  margin-top: 50px
+  right: 40px
+  background-image: url("../assets/images/arrow-right.svg")
+
+.swiper-pagination
+  z-index: 1
 
 .swiper-pagination-bullet
-    transition: .3s
-    opacity: 1
-    border: 1px solid #fff
+  transition: .3s
+  opacity: 1
+  border: 1px solid #fff
 
 .swiper-pagination-bullet-active
-    background: #930270
-    border: 1px solid #930270
+  background: #930270
+  border: 1px solid #930270
 
 .services__props_swiper
-    position: static
-    
+  position: static
+  
 .services__props_swiper_block_adaptive
-    display: none
-    &.active
-        display: block
+  display: none
+  &.active
+    display: block
 
 .services__props_swiper_block
-    display: block
+  display: block
 
 @media (prefers-color-scheme: dark) 
   html 

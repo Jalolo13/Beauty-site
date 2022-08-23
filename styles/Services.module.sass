@@ -13,8 +13,9 @@
     text-align: center
     display: none
     margin-top: 45px
-    &.active
-        display: block
+
+.active
+    display: block
 
 .section_services__listprice
     display: flex
@@ -23,14 +24,13 @@
 
 
 
-@media screen and ( max-width:1024px )
+@media screen and ( max-width:1261px )
+    .section_services__img
+        display: none
+
+@media screen and ( max-width: 1024px)
     .section_services
         padding: 0 15px
-    
-    .section_services__img
-        width: 100%
-        span, img
-            width: 100%
 
 @media screen and ( max-width: 426px)
     .section_services__listprice

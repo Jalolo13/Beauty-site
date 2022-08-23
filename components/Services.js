@@ -74,7 +74,9 @@ const Services = () => {
                                   styles.active
                                 : styles.section_services__img
                         }
-                    ></div>
+                    >
+                        <Image src={img} alt="imgPrice" />
+                    </div>
                 ))}
             </div>
         </section>
