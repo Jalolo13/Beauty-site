@@ -29,8 +29,7 @@ const MainSection = () => {
                     <p className={styles.main_section_subtitle}>
                         Annetka Hair - эксклюзивный салон красоты премиум
                         <br />
-                        класса, основная миссия которого - подарить Вам
-                        <br />
+                        класса, основная миссия которого - подарить Вам <br />
                         красивые волосы
                     </p>
                     <div className={styles.main_section_btns}>
