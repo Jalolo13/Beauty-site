@@ -26,10 +26,7 @@ const Contacts = () => {
 
                 <div className={styles.contacts__block}>
                     <h4 className={styles.contacts__subtitle}>Время работы</h4>
-                    <p className={styles.contacts__text}>
-                        По предварительной <br />
-                        записи
-                    </p>
+                    <p className={styles.contacts__text}>По записи</p>
                 </div>
                 <div className={styles.contacts__block}>
                     <h4 className={styles.contacts__subtitle}>соц. сети</h4>

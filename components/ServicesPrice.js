@@ -1,6 +1,11 @@
 import styles from "../styles/ServicesPrice.module.sass";
 
 const ServicesPrice = ({ arrServices, active }) => {
+    const handleScroll = (e, service) => {
+        e.preventDefault();
+        const services = document.querySelector(`${service}`);
+        services.scrollIntoView({ block: "start", behavior: "smooth" });
+    };
     return (
         <div className={styles.section_services__prices}>
             {arrServices.map(
@@ -63,6 +68,12 @@ const ServicesPrice = ({ arrServices, active }) => {
                                         styles.services_prices_btn_second +
                                         " " +
                                         styles.services_prices_btn
+                                    }
+                                    onClick={(e) =>
+                                        handleScroll(
+                                            e,
+                                            ".ServicesProps_services_props_masters__TcfVC"
+                                        )
                                     }
                                 >
                                     Наши мастера
